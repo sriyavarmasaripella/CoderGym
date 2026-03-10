@@ -839,6 +839,50 @@
             "requirements": {
                 "validation": "AUC/AP reported with deterministic sampling."
             }
+        },
+                {
+            "series": "Deep Learning Extensions",
+            "level": 1,
+            "id": "dlx_lvl1_tabular_mlp",
+            "algorithm": "MLP Regression on Synthetic Tabular Data",
+            "description": "Train a small MLP on synthetic regression data and assert validation R2.",
+            "interface_protocol": "pytorch_task_v1",
+            "requirements": {
+                "validation": "Assert validation R2 > 0.85."
+            }
+        },
+        {
+            "series": "Deep Learning Extensions",
+            "level": 2,
+            "id": "dlx_lvl2_cnn_augmented",
+            "algorithm": "CNN with Data Augmentation",
+            "description": "Train a simple CNN with augmentation and assert validation accuracy.",
+            "interface_protocol": "pytorch_task_v1",
+            "requirements": {
+                "validation": "Assert validation accuracy > 0.30."
+            }
+        },
+        {
+            "series": "Deep Learning Extensions",
+            "level": 3,
+            "id": "dlx_lvl3_autoencoder_mnist",
+            "algorithm": "Autoencoder Reconstruction Task",
+            "description": "Train an autoencoder and assert reconstruction loss.",
+            "interface_protocol": "pytorch_task_v1",
+            "requirements": {
+                "validation": "Assert validation MSE < 0.06."
+            }
+        },
+        {
+            "series": "Deep Learning Extensions",
+            "level": 4,
+            "id": "dlx_lvl4_transformer_text",
+            "algorithm": "Transformer Text Classifier",
+            "description": "Train a small transformer encoder for toy text classification.",
+            "interface_protocol": "pytorch_task_v1",
+            "requirements": {
+                "validation": "Assert validation accuracy > 0.80."
+            }
         }
     ]
 }
